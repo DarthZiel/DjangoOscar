@@ -214,10 +214,3 @@ OSCAR_DEFAULT_CURRENCY = 'EUR'
 
 OSCAR_MAX_ORDER_DOWNLOAD_ATTEMPTS = 5
 
-# Путь к каталогу статических файлов (CSS, JavaScript, изображения)
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-# Путь к каталогу для медиафайлов (загруженные пользователем файлы)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
