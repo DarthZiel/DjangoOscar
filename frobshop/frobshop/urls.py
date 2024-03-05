@@ -32,7 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', include(apps.get_app_config('oscar').urls[0])),
-    path("api/v1/", include("oscarapi.urls")),
+    path("api/", include("oscarapi.urls")),
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
